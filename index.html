@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1 - 10</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="wrapper">        
+        <div id="Act1" class="Act"><br><br><br><br><br><br>
+            <h1>Activity 1</h1>
+            <h1>Is the Number Even or Odd?</h1>
+            <label for="evenoroddnumber">Please enter a number: </label>
+            <input type="number" name="evenoroddnumber" id="evenoroddnumber"><br><br>
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=isEvenOrOdd(evenoroddnumber.value)>
+        </div>
+
+        <div id="Act2" class="Act"><br><br><br><br><br><br>
+            <h1>Activity 2</h1>
+            <h1>Is it Number or Not?</h1>
+            <label for="numornot">Please input anything: </label>
+            <input type="text" name="numornot" id="numornot"><br><br>
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=isNumberOrNot(numornot.value)>
+        </div>
+
+        <div id="Act3" class="Act"><br><br><br><br>
+            <h1>Activity 3</h1>
+            <h1>Finding the Largest of the Two Numbers.</h1>
+            <label for="lar2num1">Please enter the first number: </label>
+            <input type="number" name="lar2num1" id="lar2num1"><br>
+            <label for="lar2num2">Please enter the second number: </label>
+            <input type="number" name="lar2num2" id="lar2num2"><br><br>
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=findLargestTwoNumber(Number(lar2num1.value),Number(lar2num2.value))>
+        </div>
+
+        <div id="Act4" class="Act"><br><br><br>
+            <h1>Activity 4</h1>
+            <h1>Finding the Largest of the Three Numbers.</h1>
+            <label for="lar3num1">Please enter the first number: </label>
+            <input type="number" name="lar3num1" id="lar3num1"><br>
+            <label for="lar3num2">Please enter the second number: </label>
+            <input type="number" name="lar3num2" id="lar3num2"><br>
+            <label for="lar3num3">Please enter the third number: </label>
+            <input type="number" name="lar3num3" id="lar3num3"><br><br>
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=findLargestThreeNumber(Number(lar3num1.value),Number(lar3num2.value),Number(lar3num3.value))>
+        </div>
+
+        <div id="Act5" class="Act">
+            <h1>Activity 5</h1>
+            <h1>Finding if a Triangle is Equilateral, Scalene, or Isosceles.</h1>
+            <label for="trinum1">Please enter the first side: </label>
+            <input type="number" name="trinum1" id="trinum1"><br>
+            <label for="trinum2">Please enter the second side: </label>
+            <input type="number" name="trinum2" id="trinum2"><br>
+            <label for="trinum3">Please enter the third side: </label>
+            <input type="number" name="trinum3" id="trinum3"><br><br>
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=findTriangleType(Number(trinum1.value),Number(trinum2.value),Number(trinum3.value))>
+        </div>
+
+        <div id="Act6" class="Act"><br><br>
+            <h1>Activity 6</h1>
+            <h1>Finding if the Number is Present in the Given Range.</h1>
+            <label for="chknum1">Please enter a number: </label>
+            <input type="number" name="chknum1" id="chknum1"><br>
+            <label for="chknum2">Please enter a start number: </label>
+            <input type="number" name="chknum2" id="chknum2"><br>
+            <label for="chknum3">Please enter a end number: </label>
+            <input type="number" name="chknum3" id="chknum3"><br><br>
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=checkInRange(Number(chknum1.value),Number(chknum2.value),Number(chknum3.value))>
+        </div>
+
+        <div id="Act7" class="Act">
+            <h1>Activity 7</h1>
+            <h1>Performing Arithmetic Operations on Two Numbers.</h1>
+            <p>Please input the operation if addition, subtraction, multiplication, division, modulus.</p>            
+            <label for="perop">Operation: </label><br>
+            <input type="text" name="perop" id="perop"><br>
+            <label for="pernum1">Please enter the first number: </label>
+            <input type="number" name="pernum1" id="pernum1"><br>
+            <label for="pernum2">Please enter the second number: </label>
+            <input type="number" name="pernum2" id="pernum2"><br><br>            
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=evalNumbers(Number(pernum1.value),Number(pernum2.value),perop.value)>
+        </div>
+
+        <div id="Act8" class="Act"><br><br><br><br>
+            <h1>Activity 8</h1>
+            <h1>Finding if a Year is Leap Year or Not.</h1>           
+            <label for="findyr">Please input a year: </label>
+            <input type="number" name="findyr" id="findyr"><br><br>    
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=checkLeapYear(Number(findyr.value))>
+        </div>
+
+        <div id="Act9" class="Act"><br><br><br><br>
+            <h1>Activity 9</h1>
+            <h1>Finding the Grade for Input Marks.</h1>               
+            <label for="findnme">Please enter your name: </label>
+            <input type="text" name="findnme" id="findnme"><br>
+            <label for="findgrd">Please enter your grade: </label>
+            <input type="number" name="findgrd" id="findgrd"><br><br>     
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=findGrade(Number(findgrd.value),findnme.value)>
+        </div>
+
+        <div id="Act10" class="Act"><br><br><br><br>
+            <h1>Activity 10</h1>
+            <h1>Finding the Number of Days in a Given Month.</h1>               
+            <label for="findmon">Please enter a month: </label>
+            <input type="number" name="findmon" id="findmon"><br>
+            <label for="findyear">Please enter a year: </label>
+            <input type="number" name="findyear" id="findyear"><br><br>     
+            <input type="button" style="font-size: 20px;" value="Validate" onclick=findDaysInMonth(Number(findmon.value),Number(findyear.value))>
+        </div>
+    </div>
+</body>
+</html>

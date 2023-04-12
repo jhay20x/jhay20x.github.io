@@ -1,0 +1,20 @@
+body{
+    height: 1200px;
+    background-color: burlywood;
+    font-family: "Helvetica";
+}
+
+.Act{
+    background-color: black;
+    border: 5px solid white;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 25px;
+    float: left;
+    height: 490px;
+    text-align: center;
+    border-radius: 20px;
+}
