@@ -1,0 +1,17 @@
+.container{
+    max-width: 1600px;
+}
+
+#myTable table, #myTable td, #myTable th, #myTable tr{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#myTable{    
+    overflow-x: auto;
+}
+
+#myTable table{    
+    width: 1450px;
+}
